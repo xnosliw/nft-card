@@ -1,0 +1,106 @@
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+  }
+
+  body{
+    font-family: "outfit",sans-serif;
+    font-size: 18px;
+    background-color: var(--main-bg);
+  }
+  * {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  .card {
+    position: relative;
+    width: 450px;
+    background-color: var(--card-bg);
+    color: var(--Soft-blue);
+    padding: 25px 25px;
+    border-radius: 2%;
+    font-weight: 300;
+    line-height: 26px;
+    margin: 50px auto;
+  }
+  
+  .card h2{
+    font-weight: 600;
+    color: var(--white);
+    font-size: 22px;
+    line-height: 28px;
+    margin: 20px 0 10px 0;
+  }
+  
+  .card h2:hover{
+    color: var(--Cyan);
+  }
+  .nft-card{
+    width: 100%;
+  border-radius: 1%;
+ 
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    margin: 15px 0;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 20px;
+  }
+.time, .price{
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+.time img, .price img{
+  margin-right: 5px;
+}
+.price:first-child{
+  color: var(--Cyan);
+
+}
+.img-overlay{
+  background-color: var(--Cyan);
+  position: absolute; 
+  opacity: 0;
+  top: 25px;
+  left: 25px;
+  height: 400px;
+  width: 400px;
+border-radius: 2%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.img-overlay:hover{
+  opacity: 0.6;
+  transition: 1s;
+}
+.creator{
+  display: flex;
+  align-items: center;
+}
+
+.creator img{
+width: 50px;
+margin-right: 20px;
+border: 2px solid var(--White);
+border-radius: 100px;
+}
+.creator span{
+  color: var(--White);
+}
+.creator span:hover{
+  color: var(--Cyan);
+}
